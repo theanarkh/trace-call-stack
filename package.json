@@ -1,0 +1,17 @@
+{
+  "name": "trace-call-stack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/trace_call_stack.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "init": "cd src && node-gyp configure",
+    "dev": "cd src && node-gyp build",
+    "test-js": "node test/test_js/index.js",
+    "test-cpu-addon": "cd test/test_cpu_addon && node-gyp rebuild && node test.js",
+    "test-sleep-addon": "cd test/test_sleep_addon && node-gyp rebuild && node test.js",
+    "install": "cd src && node-gyp rebuild"
+  },
+  "author": "",
+  "license": "ISC"
+}
